@@ -1,0 +1,20 @@
+
+
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="/styles.css">
+  <head>
+  
+  
+  </head>
+  <body>
+    <h1>Welcome to the Home Page</h1>
+ 
+    <p>This is the main content of the home page.</p>
+    <h3>This are the names</h3>
+  <%console.log("INFO of the main page " + blog)%>
+      <% blog.forEach(x => {%>
+        <a class="single" href="/blogs/<%= x._id%>"> 
+        <p><%= x.title %></p></a><%});%>
+  </body>
+</html>
